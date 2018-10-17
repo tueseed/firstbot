@@ -1,7 +1,7 @@
 <?php
 function reply_msg($txtin,$replyToken)//สร้างข้อความและตอบกลับ
 {
-    $access_token = '7Bkj6AqoRCKOJc08sAW2luAwLn3PT99764/VTeSHnDzCGlc0oXF+ourT4ZVRK01darE/LYd5ihfcuxEbHa30I4qAvzfJNK3EStUU/TKJcfw9xOJxTNo+AMJtXwpQD0zdZsLo/TDUGFUZAqSbN5fWUwdB04t89/1O/w1cDnyilFU=';
+    $access_token = 'ofJK993hATG+jz4197GWAWBgVp/HGVbjD+15L3pmNjybMnG/dyAF5QX9+nP0T5U68LpQM446o/uIUbLxOfjm09FDX+73peOuXqHvKttcHLcHRMWPcPaiXHDaHhSCAnuGGi32HQ+3L3V6dz27FZb9cgdB04t89/1O/w1cDnyilFU=';
     $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
     $url = 'https://api.line.me/v2/bot/message/reply';
     $data = [

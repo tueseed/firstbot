@@ -22,9 +22,9 @@ function reply_msg($txtin,$replyToken)//สร้างข้อความแ�
 }
 
 // รับข้อมูล
-file_put_contents('log.txt',file_get_contents('php://input').PHP_EOL,FILE_APPEND);
 $content = file_get_contents('php://input');//รับข้อมูลจากไลน์
 $events = json_decode($content, true);//แปลง json เป็น php
+file_put_contents('log.txt',file_get_contents('php://input').PHP_EOL,FILE_APPEND); //สร้างไฟล์ log
 if (!is_null($events['events'])) //check ค่าในตัวแปร $events
 {
     foreach ($events['events'] as $event) {

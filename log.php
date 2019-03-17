@@ -1,5 +1,8 @@
 <?php
-	$contect = "88888888888888888888888888888888";
-	file_put_contents('file/log.txt',$contect,FILE_APPEND);
-	echo "555555555";
+	$data = "dmsklafnalknfsf";
+	$fileLocation = getenv("DOCUMENT_ROOT") . "/file/case1.txt";
+	$file = fopen($fileLocation,"w");
+	fwrite($file,$data);
+	fclose($file);
+	echo "lklkfnalkflkdavf";
 ?>

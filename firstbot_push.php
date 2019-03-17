@@ -38,7 +38,7 @@
 																},
 																{
 																	"type": "button",
-																	"style": "success",
+																	"style": "primary",
 																	"color": "#5b2a72",
 																	"action": {
 																				"type": "uri",

@@ -39,6 +39,7 @@
 																{
 																	"type": "button",
 																	"style": "success",
+																	"color": "#5b2a72",
 																	"action": {
 																				"type": "uri",
 																				"label": "รายละเอียด",

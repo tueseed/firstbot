@@ -27,6 +27,7 @@
 												"aspectRatio": "20:13",
 												"aspectMode": "cover"
 											},
+									
 									"footer": {
 												"type": "box",
 												"layout": "vertical",
@@ -37,11 +38,10 @@
 																},
 																{
 																	"type": "button",
-																	"style": "primary",
-																	"color": "#5b2a72",
+																	"style": "success",
 																	"action": {
 																				"type": "uri",
-																				"label": "เอกสารการประชุม",
+																				"label": "รายละเอียด",
 																				"uri": "https://linecorp.com"
 																				}
 																}

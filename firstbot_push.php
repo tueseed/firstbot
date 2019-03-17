@@ -14,7 +14,7 @@
 																	"type": "text",
 																	"text": "ประชาสัมพันธ์",
 																	"weight": "bold",
-																	"color": "#5b2a72",
+																	"color": "#B7F4A9",
 																	"align": "center",
 																	"size": "md"
 																}
@@ -39,7 +39,7 @@
 																{
 																	"type": "button",
 																	"style": "primary",
-																	"color": "#5b2a72",
+																	"color": "#B7F4A9",
 																	"action": {
 																				"type": "uri",
 																				"label": "รายละเอียด",

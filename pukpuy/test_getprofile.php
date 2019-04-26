@@ -9,6 +9,10 @@
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
     $result = curl_exec($ch);
     curl_close($ch);
-    $display = json_decode($result);
-    echo $display;
+    $result1 = json_decode($result);
+    foreach($result1 as $profile)
+    {
+        $displayname = $profile['displayName']
+    }
+    echo $displayname;
 ?>

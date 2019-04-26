@@ -46,7 +46,11 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             $profile = get_profile($event['source']['userId']);
-            reply_msg(,$replyToken);      
+            if($txtin == 'hi')
+            {
+                $txtback = 'สวัสดีครับคุณ '.json_decode($profile,true)['displayName'];
+            }
+            reply_msg($txtback,$replyToken);      
         }
     }
 }

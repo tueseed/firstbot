@@ -9,6 +9,6 @@
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
     $result = curl_exec($ch);
     curl_close($ch);
-    $resule = json_encode($result);
-    echo ;
+    $result1 = json_encode($result);
+    echo $result1;
 ?>

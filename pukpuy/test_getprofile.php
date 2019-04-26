@@ -11,5 +11,5 @@
     curl_close($ch);
     $result1 = array($result);
     
-    echo $result1;
+    echo $result1[0];
 ?>

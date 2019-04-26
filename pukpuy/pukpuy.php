@@ -31,12 +31,12 @@ function reply_msg($txtin,$replyToken)//สร้างข้อความแ�
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
     $result = curl_exec($ch);
     curl_close($ch);
-    echo $result . "\r\n";
+    echo json_encode($result) . "\r\n";
 }
 
 // รับข้อมูล
 $content = file_get_contents('php://input');//รับข้อมูลจากไลน์
-$events = json_decode($content, true);//แปลง json เป็น php
+$events = json_decode($content, true);//แปลง json เป็น  array 
 if (!is_null($events['events'])) //check ค่าในตัวแปร $events
 {
     foreach ($events['events'] as $event) {
@@ -46,7 +46,7 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             $profile = get_profile($event['source']['userId']);
-            reply_msg(json_encode($profile),$replyToken);      
+            reply_msg(,$replyToken);      
         }
     }
 }

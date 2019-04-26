@@ -10,5 +10,5 @@
     $result = curl_exec($ch);
     curl_close($ch);
     $result1 = json_encode($result);
-    echo $result1;
+    echo $result1['displayName'];
 ?>

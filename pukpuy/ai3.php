@@ -12,9 +12,11 @@ function response()
     $text_message = array('messages'=>array('speech'=>'hihi','type'=>0));
 	$response = array(
 		   'fulfillmentText' => '123456789',	
-			'fulfillmentMessages' => array($text_message)		   
+			'fulfillmentMessages' => array(
+                                      'messages'=> array('speech'=>'Text response','type'=>0)
+      )		   
 	   );
-	header("Content-Type: application/json");
+  header("Content-Type: application/json");
 	echo json_encode($response);
 }
 header("Content-Type: application/json");	

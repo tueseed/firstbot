@@ -9,7 +9,7 @@ function response()
 			   'displayText' => 'HI THIS .....'
 			)
     );
-    $text_message = array('message'=>array('speech'=>'hihi','type'=>0));
+    $text_message = array('messages'=>array('speech'=>'hihi','type'=>0));
 	$response = array(
 		   'fulfillmentText' => '123456789',	
 			'fulfillmentMessages' => array($text_message)		   

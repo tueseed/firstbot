@@ -17,7 +17,7 @@ function response()
       )		   
 	   );
   header("Content-Type: application/json");
-	echo json_encode($response);
+	echo json_encode($text_message);
 }
 header("Content-Type: application/json");	
 $method = $_SERVER["REQUEST_METHOD"];

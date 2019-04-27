@@ -10,8 +10,8 @@ function response()
 			)
 		);
 	$response = array(
-		   'fulfillmentText' => array($speech),	
-			'fulfillmentMessages' => array($fulfillmentMessages)		   
+		   'fulfillmentText' => '123456789',	
+			'fulfillmentMessages' => array($speech)		   
 	   );
 	header("Content-Type: application/json");
 	echo json_encode($response);

@@ -20,7 +20,7 @@ function response()
               "speech": "this text is spoken out loud if the platform supports voice interactions",
               "displayText": "this text is displayed visually"
             }';
-  $j_return = json_decode($json);
+  $j_return = json_decode($json,true);
   header("Content-Type: application/json");
   echo $j_return;
 	//echo json_encode($text_message);

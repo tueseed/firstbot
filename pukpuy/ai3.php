@@ -15,9 +15,15 @@ function response()
 			'fulfillmentMessages' => array(
                                       'messages'=> array('speech'=>'Text response','type'=>0)
       )		   
-	   );
+     );
+  $json = '{
+              "speech": "this text is spoken out loud if the platform supports voice interactions",
+              "displayText": "this text is displayed visually"
+            }';
+  $j_return = json_decode($json);
   header("Content-Type: application/json");
-	echo json_encode($text_message);
+  echo $j_return;
+	//echo json_encode($text_message);
 }
 header("Content-Type: application/json");	
 $method = $_SERVER["REQUEST_METHOD"];

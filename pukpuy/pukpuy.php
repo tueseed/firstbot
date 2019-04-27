@@ -1,4 +1,8 @@
 <?php
+function query_answer($keyword)
+{
+
+}
 function get_profile($uid)
 {
     $access_token = 'fWLrTK5krDwyg4qvrzWjMOswkmL7kuackgKM+6p2XA6gMSUGN1mUVJ1NupFWc/KWqs9uuem2vLryNsrE9m1TqfxVMXBpo7UFo40XP1s3ZCzDZTxbyQaiww3NiUGzXPXLYkPcBeqKDnVrrHo4yri5twdB04t89/1O/w1cDnyilFU=';
@@ -49,8 +53,13 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             if($txtin == 'hi')
             {
                 $txtback = 'สวัสดีครับคุณ '.json_decode($profile,true)['displayName'];
+                reply_msg($txtback,$replyToken);
             }
-            reply_msg($txtback,$replyToken);      
+            else
+            {
+                query_answer($txtin);
+            }
+                  
         }
     }
 }

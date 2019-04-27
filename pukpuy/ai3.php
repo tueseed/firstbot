@@ -22,8 +22,8 @@ function response()
             }';
   $j_return = json_decode($json,true);
   header("Content-Type: application/json");
-  echo $j_return;
-	//echo json_encode($text_message);
+  //echo $j_return;
+	echo json_encode($json);
 }
 header("Content-Type: application/json");	
 $method = $_SERVER["REQUEST_METHOD"];

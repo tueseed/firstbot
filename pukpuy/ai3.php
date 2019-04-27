@@ -2,7 +2,7 @@
 function response($param1)
 {
   $json = '{
-              "speech": '.$param1.',
+              "speech": "'.$param1.'",
               "displayText": "this text is displayed visually"
             }';
   $j_return = json_decode($json,true);

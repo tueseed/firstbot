@@ -16,7 +16,8 @@ if($method == "POST")
 {
   $requestBody = file_get_contents('php://input');
   $request = json_decode($requestBody,true);
-  $start_time = $request['result']['parameters']['start_time'];
+  //$start_time = $request['result']['parameters']['start_time'];
+  $start_time = $request['result']['source'];
 	response($start_time);
 }else{
 	echo "Method Not allow";

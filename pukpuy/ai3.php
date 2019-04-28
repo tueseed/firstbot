@@ -2,6 +2,8 @@
 function creat_meeting($meeting_date,$meeting_topic,$start_time,$end_time,$place)
 {
   require('connect_db.php');
+  $sql_insert = "INSERT INTO tbl_meeting(meeting_date,meeting_topic,start_time,end_time,place) VALUES('$meeting_date','$meeting_topic','$start_time','$end_time','$place')";
+  mysqli_query($conn,$sql_insert);
   $text_response = 'เรียบร้อยครับ ปุกปุยบันทึกข้อมูลการประชุมลงสมุดแล้ว ไว้ใกล้ถึงวัน ปุกปุยจะเตือนอีกทีนะครับ';
   response($text_response);
 }

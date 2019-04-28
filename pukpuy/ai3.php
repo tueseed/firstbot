@@ -13,7 +13,6 @@ function response($text_response)
             }';
   $j_return = json_decode($json,true);
   header("Content-Type: application/json");
-  //echo $j_return;
 	echo json_encode($j_return);
 }
 header("Content-Type: application/json");	

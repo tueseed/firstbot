@@ -1,7 +1,7 @@
 <?php
 function creat_meeting($meeting_date,$meeting_topic,$start_time,$end_time,$place)
 {
-  require(connect_db.php);
+  require('connect_db.php');
   $text_response = 'เรียบร้อยครับ ปุกปุยบันทึกข้อมูลการประชุมลงสมุดแล้ว ไว้ใกล้ถึงวัน ปุกปุยจะเตือนอีกทีนะครับ';
   response($text_response);
 }

@@ -1,5 +1,11 @@
 <?php
-function response($param1)
+function creat_meeting($meeting_date,$meeting_topic,$start_time,$end_time,$place)
+{
+  require(connect_db.php);
+  $text_response = 'เรียบร้อยครับ ปุกปุยบันทึกข้อมูลการประชุมลงสมุดแล้ว ไว้ใกล้ถึงวัน ปุกปุยจะเตือนอีกทีนะครับ';
+  response($text_response);
+}
+function response($text_response)
 {
   $json = '{
               "speech": "'.$param1.'",
@@ -16,9 +22,17 @@ if($method == "POST")
 {
   $requestBody = file_get_contents('php://input');
   $request = json_decode($requestBody,true);
-  //$start_time = $request['result']['parameters']['start_time'];
-  $start_time = $request['result']['source'];
-	response($start_time);
+  $command = $request['result']['parameters']['command'];
+  if($commend == 'creat')
+  {
+    $meeting_date = $request['result']['parameters']['date']; 
+    $start_time = $request['result']['parameters']['start_time'];
+    $end_time = $request['result']['parameters']['end_time'];
+    $meeting_topic = $request['result']['parameters']['topic'];
+    $place = $request['result']['parameters']['place_creat'];
+    creat_meeting($meeting_date,$meeting_topic,$start_time,$end_time,$place);
+  
+  }
 }else{
 	echo "Method Not allow";
 }

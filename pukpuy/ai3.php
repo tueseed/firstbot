@@ -22,7 +22,7 @@ if($method == "POST")
   $requestBody = file_get_contents('php://input');
   $request = json_decode($requestBody,true);
   $command = $request['result']['parameters']['command'];
-  if($commend == 'creat')
+  if($command == 'creat')
   {
     $meeting_date = $request['result']['parameters']['date']; 
     $start_time = $request['result']['parameters']['start_time'];

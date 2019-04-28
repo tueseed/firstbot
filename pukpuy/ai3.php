@@ -8,7 +8,7 @@ function creat_meeting($meeting_date,$meeting_topic,$start_time,$end_time,$place
 function response($text_response)
 {
   $json = '{
-              "speech": "'.$param1.'",
+              "speech": "'.$text_response.'",
               "displayText": "this text is displayed visually"
             }';
   $j_return = json_decode($json,true);

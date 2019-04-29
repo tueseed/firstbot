@@ -8,6 +8,7 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="liff_search.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Sarabun|Roboto" rel="stylesheet">
 		
 	</head>
@@ -28,7 +29,7 @@
 						<div class="form-group">
 							<select class="form-control" id="office_select">
 								<option>--เลือกหน่วยงาน--</option>
-								<option>กฟอ.พธร.</option>
+								<option value="j091">กฟอ.พธร.</option>
 								<option>กฟส.บางแพ</option>
 								<option>กฟส.ดำเนินสะดวก</option>
 								<option>กฟส.ดอนไผ่</option>
@@ -38,7 +39,7 @@
 							<input type="text" class="form-control" placeholder="คำค้นหา">
 						</div>
 						<div class="form-group">
-							<button type="button" class="btn btn-primary btn-block" >ค้นหา</button>
+							<button type="button" class="btn btn-primary btn-block" onclick="search()">ค้นหา</button>
 						</div>
 					</div>
 				</div>

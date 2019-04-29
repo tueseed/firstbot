@@ -21,3 +21,7 @@ function search()
                 }				
         });*/
 }
+function repair()
+{
+    alert("Complete...");
+}

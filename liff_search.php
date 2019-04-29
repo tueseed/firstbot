@@ -8,7 +8,7 @@
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Sarabun|Roboto" rel="stylesheet">
-		<script src="upload.js"></script>
+		
 	</head>
 	<body>
 		<header style="margin-bottom: 70px;">

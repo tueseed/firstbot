@@ -44,6 +44,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="container mt-2">
+				<div class="ro row-center">
+					<div class="col-lg-12">
+						<p id="search_result">ผลการค้นหา</p>
+						<div class="card">
+							<div class="card-body">อุปกรณ์ 1</div>
+						</div>
+						<div class="card">
+							<div class="card-body">อุปกรณ์ 2</div>
+						</div>
+						<div class="card">
+							<div class="card-body">อุปกรณ์ 3</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>

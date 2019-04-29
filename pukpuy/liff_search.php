@@ -37,7 +37,7 @@
 							<input type="text" class="form-control" placeholder="คำค้นหา">
 						</div>
 						<div class="form-group">
-							<button type="button" class="btn btn-primary" >ค้นหา</button>
+							<button type="button" class="btn btn-primary btn-block" >ค้นหา</button>
 						</div>
 					</div>
 				</div>

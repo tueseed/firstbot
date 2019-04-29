@@ -28,11 +28,11 @@
 					<div class="col-lg-12">
 						<div class="form-group">
 							<select class="form-control" id="office_select">
-								<option>--เลือกหน่วยงาน--</option>
+								<option selected disabled>--เลือกหน่วยงาน--</option>
 								<option value="j091">กฟอ.พธร.</option>
-								<option>กฟส.บางแพ</option>
-								<option>กฟส.ดำเนินสะดวก</option>
-								<option>กฟส.ดอนไผ่</option>
+								<option value="j092">กฟส.บางแพ</option>
+								<option value="j093">กฟส.ดำเนินสะดวก</option>
+								<option value="j094">กฟส.ดอนไผ่</option>
 							</select>
 						</div>
 						<div class="form-group">

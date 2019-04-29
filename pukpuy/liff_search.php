@@ -23,20 +23,22 @@
 		<main>
 			<div class="container mt-2">
 				<div clas="row row-center">
-					<select class="form-control" id="office_select">
-						<option>--เลือกหน่วยงาน--</option>
-						<option>กฟอ.พธร.</option>
-						<option>กฟส.บางแพ</option>
-						<option>กฟส.ดำเนินสะดวก</option>
-						<option>กฟส.ดอนไผ่</option>
-					</select>
-				</div>
-				<div clas="row row-center mt-2">
-					<input type="text" class="form-control" placeholder="คำค้นหา">
-				</div>
-				<div class="row row-center mt-2">
 					<div class="col-lg-12">
-						<button type="button" class="btn btn-primary" >ค้นหา</button>
+						<div class="form-group">
+							<select class="form-control" id="office_select">
+								<option>--เลือกหน่วยงาน--</option>
+								<option>กฟอ.พธร.</option>
+								<option>กฟส.บางแพ</option>
+								<option>กฟส.ดำเนินสะดวก</option>
+								<option>กฟส.ดอนไผ่</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="คำค้นหา">
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" >ค้นหา</button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -48,14 +48,17 @@
 				<div class="row">
 					<div class="col-lg-12">
 					<p id="search_result">ผลการค้นหา 3 รายการ</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
 						<div class="card mt-2">
 							<div class="card-body">อุปกรณ์ 1</div>
 						</div>
+					</div>
+					<div class="col-lg-12">
 						<div class="card mt-2">
-							<div class="card-body">อุปกรณ์ 2</div>
-						</div>
-						<div class="card mt-2">
-							<div class="card-body">อุปกรณ์ 3</div>
+							<div class="card-body">อุปกรณ์ 1</div>
 						</div>
 					</div>
 				</div>

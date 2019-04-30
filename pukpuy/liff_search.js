@@ -1,3 +1,7 @@
+function render_card()
+{
+    var = document.getElementById("")
+}
 function search()
 {
     var office_select = document.getElementById("office_select").value
@@ -14,7 +18,8 @@ function search()
 			processData: false,
 			contentType: false,
 			success: function(response) {
-						console.log(response);  
+                        console.log(response);
+                        var obj = JSON.parse(response);  
                     }				
 			});
 }

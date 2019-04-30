@@ -36,7 +36,7 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="คำค้นหา">
+							<input type="text" class="form-control" placeholder="คำค้นหา" id="keyword">
 						</div>
 						<div class="form-group">
 							<button type="button" class="btn btn-primary btn-block" onclick="search()">ค้นหา</button>

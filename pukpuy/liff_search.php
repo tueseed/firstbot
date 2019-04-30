@@ -46,8 +46,8 @@
 			</div>
 			<div class="container mt-2">
 				<div class="row">
+					<p id="search_result">ผลการค้นหา 3 รายการ</p>
 					<div class="col-lg-12">
-						<p id="search_result">ผลการค้นหา 3 รายการ</p>
 						<div class="card mt-2">
 							<div class="card-body">อุปกรณ์ 1</div>
 						</div>
